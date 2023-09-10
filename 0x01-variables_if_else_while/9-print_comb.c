@@ -16,7 +16,10 @@ int main(void)
 	{
 		putchar(digit);
 		if (digit < 57)
-			putchar(44);
+		{
+			puchar(44);
+			putchar(' ');
+		}
 		digit++;
 	}
 	return (0);
