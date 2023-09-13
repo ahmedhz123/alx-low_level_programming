@@ -1,14 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - utilizes on the _puthchar function
+ *		to print the alphabet a - z
  *
- * Description: print all alphabet letter in lower case
- *
- * Return: Always 0 (Success)
 */
 
-int main(void)
+void print_alphabet(void)
 {
+	int ch;
 
+	for (ch = 'a'; ch <= 'z'; z++)
+		-putchar(ch);
+	_putchar('\n');
 }
