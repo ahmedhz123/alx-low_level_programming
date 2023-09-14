@@ -1,7 +1,11 @@
 #include"main.h"
 
 /**
- * print_most_numbers - print all decimal except 2 and 4.
+ * print_most_numbers - print 0 - 9 apart
+ *		form 2 and 4 and you can
+ *		only use _putchar twice
+ *
+ * Return: 0 Always (Success)
 */
 
 void print_most_numbers(void)
