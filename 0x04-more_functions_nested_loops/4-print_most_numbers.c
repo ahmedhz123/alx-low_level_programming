@@ -5,7 +5,7 @@
  *		form 2 and 4 and you can
  *		only use _putchar twice
  *
- * Return: 0 Always (Success)
+ * Return: void
 */
 
 void print_most_numbers(void)
@@ -15,7 +15,7 @@ void print_most_numbers(void)
 	for (i = 0; i < 10; i++)
 	{
 		if (i != 2 && i != 4)
-			_putchar(i + 48);
+			_putchar(i + '0');
 	}
 	_putchar('\n');
 }
