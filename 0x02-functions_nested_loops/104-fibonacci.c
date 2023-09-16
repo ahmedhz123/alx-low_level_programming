@@ -8,7 +8,9 @@
 
 int main(void)
 {
-	unsigned long int term1 = 1, term2 = 2, next;
+	unsigned long int term1 = 1;
+	unsigned long int term2 = 2;
+	unsigned long int  next;
 	int i;
 
 	printf("%lu, ", term1);
