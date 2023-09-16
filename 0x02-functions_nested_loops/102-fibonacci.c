@@ -7,9 +7,10 @@
 
 int main(void)
 {
-	int i, next;
-	int term1 = 1;
-	int term2 = 2;
+	unsigned long int next;
+	unsigned long int term1 = 1;
+	unsigned long int term2 = 2;
+	int i;
 
 	printf("%d, ", term1);
 	for (i = 1; i < 50; i++)
