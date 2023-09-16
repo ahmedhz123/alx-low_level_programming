@@ -14,7 +14,7 @@ int main(void)
 	int next;
 	int sum = 2;
 
-	while (next < limit)
+	while (next <= limit)
 	{
 		next = term1 + term2;
 
