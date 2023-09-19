@@ -4,6 +4,8 @@
  * print_array - the function name
  * @a: parameter 1
  * @n: parameter 2
+ *
+ * Return: void
 */
 void print_array(int *a, int n)
 {
@@ -11,10 +13,10 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		_putchar(a[i] + 48);
+		printf("%d", a[i]);
 
 		if (i < n - 1)
-			_putchar(", ");
+			printf(", ");
 	}
-	_putchar('\n');
+	printf("\n");
 }
