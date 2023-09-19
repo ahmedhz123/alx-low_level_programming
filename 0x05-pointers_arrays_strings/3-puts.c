@@ -10,12 +10,10 @@
 
 void _puts(char *str)
 {
-	int counter;
-
-	for (counter = 0; *str != '\0'; str++)
+	while (*str != '\0')
 	{
 		_putchar(*str + 48);
-		counter++;
+		str++;
 	}
 	_putchar('\n');
 }
