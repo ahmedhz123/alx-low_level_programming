@@ -14,7 +14,8 @@ void _puts(char *str)
 
 	for (counter = 0; *str != '\0'; str++)
 	{
-		_putchar(*str);
-		counter++
+		_putchar(*str + 48);
+		counter++;
 	}
+	_putchar('\n');
 }
