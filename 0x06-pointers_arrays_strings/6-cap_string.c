@@ -11,7 +11,7 @@
 
 char *cap_string(char *s)
 {
-	int i;
+	int i, j;
 	char sp[13] = {',', ';', '.', '"', '(', ')', '{', '}'
 		, '!', '?', ' ', '\t', '\n'};
 
@@ -19,7 +19,7 @@ char *cap_string(char *s)
 	{
 		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
 			s[i] = s[i] - 32;
-		for (int j = 0; j < 13; j++)
+		for (j = 0; j < 13; j++)
 		{
 			if (s[i] == sp[j])
 			{
