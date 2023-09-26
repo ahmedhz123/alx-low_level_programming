@@ -13,12 +13,12 @@ char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack != '\0')
 	{
+		const char *a = needle;
 		while (*needle != '\0')
 		{
-			if (*haystack == *needle)
+			if (*haystack == *a)
 				return (haystack);
-			needle++;
-
+			a++;
 		}
 		haystack++;
 	}
