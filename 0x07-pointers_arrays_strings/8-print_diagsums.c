@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_diagsums - prints the sum ot the two diagonals of a square matrix of integer
+ * print_diagsums - prints the sum ot the two diagonals of
+ *		 a square matrix of integer
  *
  * @a: the pointer parameter of the function
  * @size: the size of the array
@@ -20,6 +21,6 @@ void print_diagsums(int *a, int size)
 		s2 += a[size - i - 1];
 		a += size;
 	}
-	printf("%d, ",s1);
-	printf("%d\n",s2);
+	printf("%d, ", s1);
+	printf("%d\n", s2);
 }
