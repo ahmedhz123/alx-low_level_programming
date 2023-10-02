@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - multiplies two numbers
@@ -9,7 +10,7 @@
  * Return: the multiplication of two numbers
 */
 
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int mul;
 
@@ -20,7 +21,9 @@ int main(int argc, char *argv)
 	}
 	else
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
+
+	return (0);
 }
