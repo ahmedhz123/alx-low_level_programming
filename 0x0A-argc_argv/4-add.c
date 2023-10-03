@@ -2,36 +2,26 @@
 #include <stdlib.h>
 
 /**
- * main - print the sum of some numbers
+ * main - print the sum of numbers
  *
- * @argc: the arguments count
- * @argv: the arguments count
+ * @argc: the argument count
+ * @argv: the arguments vector
  *
- * Return: 0 Always (success)
+ * Return: 0
 */
 
 int main(int argc, char *argv[])
 {
-	int sum = 0, i;
+	int sum = 0;
+	char *c;
 
-	if (argc > 1)
+	while (--argc)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			if (**argv > '9' || **argv < '0')
-			{
-				printf("%s\n", "Error");
-				return (1);
-			}
-
-			sum += atoi(argv[i]);
-		}
-		printf("%d\n", sum);
+		for (c = argv[argc]; *c; c++)
+			if (*c < '0' || *c > '9')
+				return (printf("Error\n"), 1);
+		sum += atoi(argv[argc]);
 	}
-
-	else if (argc == 1)
-	{
-		printf("%d\n", sum);
-	}
+	printf("%d\n", sum);
 	return (0);
 }
