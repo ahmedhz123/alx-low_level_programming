@@ -23,11 +23,13 @@ int main(int argc, char *argv[])
 		{
 			if (money >= cent_value[i])
 			{
-				leastcents += money / cent_value;
+				leastcents += money / cent_value[i];
 				money = money % cent_value[i];
 
 				if (money % cent_value[i] == 0)
+				{
 					break;
+				}
 			}
 		}
 		printf("%d\n", leastcents);
