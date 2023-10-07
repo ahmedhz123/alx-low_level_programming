@@ -12,12 +12,13 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	int *ptr;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	nmemb = calloc(size, sizeof(int));
+	ptr = calloc(size, sizeof(int));
 
-	if (nmemb == NULL)
+	if (ptr == NULL)
 		return (NULL);
-	return (nmemb);
+	return (ptr);
 }
