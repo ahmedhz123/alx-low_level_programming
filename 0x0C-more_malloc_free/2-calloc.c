@@ -40,9 +40,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	output = malloc(nmemb * size);
+	output = malloc(nmemb * sizeof(int));
 
 	if (output == NULL)
 		return (output);
-	_memset(output, 0, size * nmemb);
+	_memset(output, 0, sizeof(int) * nmemb);
 }
