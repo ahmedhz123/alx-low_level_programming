@@ -12,7 +12,7 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog_t *newDog;
+	struct dog dog_t *newDog;
 
 	newDog->name = name;
 	newDog->age = age;
