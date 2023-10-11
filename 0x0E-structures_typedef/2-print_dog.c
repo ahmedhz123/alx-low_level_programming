@@ -22,9 +22,5 @@ void print_dog(struct dog *d)
 		printf("Name: (nil)\n");
 		printf("Owner: (nill)\n");
 	}
-	if (d == NULL)
-	{
-		;
-	}
 
 }
