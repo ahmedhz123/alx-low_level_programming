@@ -42,13 +42,14 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * new_dog: creates new dog
+ * new_dog - A function that creates new dog
  *
  * @name: the name of the new dog
  * @age: the age of the new dog
  * @owner: the onwer of the new dog
  *
- * Return: the new dog
+ * Return: Struct pointer dog
+ *	NUll if function fails
 */
 
 dog_t *new_dog(char *name, float age, char *owner)
