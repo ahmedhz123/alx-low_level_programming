@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_string - prints string followed by new line
+ * print_strings - prints string followed by new line
  *
  *
  * @separator: A character that separate strings
@@ -18,11 +18,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *s;
 
 	va_list args;
+
 	va_start(args, n);
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%s",(s = va_arg(args, char *)) ? s : "(nil)");
+		printf("%s", (s = va_arg(args, char *)) ? s : "(nil)");
 
 		if (separator != NULL && i < n - 1)
 		printf("%s", separator);
