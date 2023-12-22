@@ -4,7 +4,7 @@
  * hash_table_get - A function to retrives a value associated with index
  *
  * @ht: pointer to the hash table
- * @key: the key of the hash table 
+ * @key: the key of the hash table
  *
  * Return: the value stored in the key
 */
