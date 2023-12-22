@@ -5,6 +5,7 @@
  * @ht: pointer to hash table
  *
  */
+
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i = 0;
@@ -27,3 +28,4 @@ void hash_table_print(const hash_table_t *ht)
 			bucket = bucket->next;
 		}
 	}
+}
